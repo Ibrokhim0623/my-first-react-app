@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 120px;
+    background-color: rgb(12, 6, 6);
+}
+.navbar .leftSide img{
+    width: 80px;
+}
+.navbar .rightSide a{
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    margin: 20px;
+    position: relative;
+}
+.rightSide a::before{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: all 0.4s ease;
+}
+
+.rightSide a:hover::before{
+    width: 100%;
+    cursor: pointer;
+}
+
+.toggle{
+    display: none;
+    font-size: 40px;
+}
+.open{
+    position: fixed;
+    display: grid;
+    width: 80%;
+    height: 60vh;
+    background-color: rgb(12, 6, 6);
+    top: 0;
+    left: 0;
+    padding: 20px;
+    box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+}
+.open a{
+    color: #fff !important;    
+    font-size: 24px;
+    text-decoration: none;
+    margin: 20px;
+}
+
+@media screen and (max-width: 991px) {
+    .navbar{
+        padding: 20px 40px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .navbar{
+        padding: 20px;
+    }
+    .toggle{
+        display: block;
+        background: none;
+        outline: none;
+        border: none;
+    }
+    .toggle i{
+        font-size: 30px;
+        background: none;
+        border: none;
+        outline: none;
+        color: #fff;
+    }
+    .rightSide{
+        display: none;
+    }
+}
+@media screen and (max-width: 300px) {
+    .navbar{
+        padding: 10px;
+    }
+}

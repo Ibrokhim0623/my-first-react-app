@@ -1,0 +1,31 @@
+.about{
+    height: 100vh;
+}
+
+.content h1{
+    text-align: center;
+    font-size: 50px;
+    padding: 50px 0;
+    background-image: url(/src/assets/pedrotechspecial.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.content p{
+    font-size: 24px;
+    padding: 20px 120px;
+    margin-top: 20px;
+    
+}
+@media screen and (max-width: 991px) {
+    .about{
+        height: auto;
+    }
+    .content p{
+        padding: 20px 60px;
+    }
+}
+@media screen and (max-width: 991px) {
+    .content p{
+        padding: 20px;
+    }
+}

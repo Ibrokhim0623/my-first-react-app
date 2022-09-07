@@ -1,0 +1,77 @@
+.ourMenu{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menuItem {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.menuLink div {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.menuLink {
+    border-radius: 15px;
+    width: 300px;
+    height: 350px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+}
+.menuLink h3, .menuLink h1{
+    padding: 10px 20px;
+}
+.menuLink h1{
+    font-size: 25px;
+}
+
+.menu {
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    grid-gap: 20px;
+    margin: 20px 0;
+}
+
+.order{
+    border: none;
+    color: #fff;
+    background-color: rgb(12, 6, 6);
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: auto;
+}
+
+@media screen and (max-width: 991px) {
+    .menu{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 50px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .menu{
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+    }
+}
+@media screen and (max-width: 300px) {
+    .menuLink {
+        width: 250px;
+    }
+    .menuLink h1 {
+        font-size: 20px;
+    }
+}

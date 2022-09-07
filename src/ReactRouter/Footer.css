@@ -1,0 +1,27 @@
+.mediaSocial svg{
+    color: #fff;
+    font-size: 50px;
+    margin: 20px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.footer{
+    background-color: rgb(12, 6, 6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+.mediaSocial svg:hover{
+    transform: rotate(360deg);
+}
+
+@media screen and (max-width: 360px) {
+    .mediaSocial svg {
+        color: #fff;
+        font-size: 30px;
+        margin: 10px;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,85 @@
+.contact{
+    display: flex;
+    width: 100%;
+    transition: all 0.5s ease;
+}
+.contact .leftSide{
+    flex: 50% 1;
+}
+.contact .rightSide{
+    flex: 50% 1;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+.rightSide form{
+    display: flex;
+    flex-direction: column;
+}
+.rightSide h1{
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+form label{
+    font-size: 20px;
+    color: darkgray;
+}
+form input{
+    border: none;
+    border-bottom: 1px solid #000;
+    font-size: 20px;
+    padding: 10px 0;
+    margin: 20px 0;
+}
+
+form textarea{
+    border: none;
+    border-bottom: 1px solid #000;
+    margin: 20px 0;
+}
+
+input::placeholder, textarea::placeholder{
+    color: #000;
+    font-size: 20px;
+}
+form button{
+    width: 200px;
+    padding: 10px 0;
+    font-size: 18px;
+    background-color: rgb(12, 6, 6);
+    color: #fff;
+    border: none;
+    border-radius: 0;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 576px) {
+    .contact .leftSide{
+        display: none;
+    }
+    .contact .rightSide{
+        flex: 100% 1;
+        background-image: url(../assets/pizzaLeft.jpg);
+        padding: 10px;
+    }
+    .rightSide h1{
+        color: #fff;
+        margin-bottom: 50px;
+    }
+    form label{
+        font-size: 25px;
+        color: #fff;
+        font-weight: 900;
+    }
+    form input{
+        padding: 10px;
+        border: none;
+    }
+    form textarea {
+        border: none;
+        border: none;
+        padding: 10px;
+    }
+}
